@@ -1,0 +1,12 @@
+   public State EmptyBoth() { return new State(0, currentTwo:0); }
+
+    public State FillBoth() {
+        return new State(State.capacityOne, State.capacityTwo);
+    }
+
+if (!closedSet.contains(currentState.EmptyBoth())) {
+                fringe.add(new Node(currentState.EmptyBoth(), currentNode.cost + 1, currentNode));
+            }
+            if (!closedSet.contains(currentState.FillBoth())) {
+                fringe.add(new Node(currentState.Fillboth(), currentNode.cost + 1, currentNode));
+            }
